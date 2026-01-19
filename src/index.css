@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f9fafb; /* Tailwind's gray-50 */
+  font-family: 'Inter', sans-serif;
+  @apply overflow-x-hidden;
+}
+
+html {
+  scroll-behavior: smooth; /* enables smooth scrolling */
+}
+
+/* Apply offset only to Home */
+#home {
+  scroll-margin-top: 80px; /* adjust to navbar height */
+}
+
+/* No offset for other sections */
+#education,
+#experience,
+#skills,
+#projects,
+#publications,
+#contact {
+  scroll-margin-top: 0;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+/* Hexagon Clip Path */
+.clip-hex {
+  clip-path: polygon(
+    50% 0%,
+    93% 25%,
+    93% 75%,
+    50% 100%,
+    7% 75%,
+    7% 25%
+  );
+}
