@@ -17,7 +17,7 @@ export default function About() {
           className="flex justify-center transform hover:scale-105 transition duration-500"
         >
           <img
-            src="/R_Praneeth_Portfolio/developer-illustration.svg"
+            src="/POOJA_N_PORTFOLIO/developer-illustration.svg"
             alt="Developer Illustration"
             className="w-72 md:w-[26rem] drop-shadow-[0_0_25px_rgba(56,189,248,0.7)] animate-float"
           />
